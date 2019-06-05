@@ -1,0 +1,9 @@
+#the file shakespeare.txt is in downloads folder
+cd Downloads
+
+#command to insert text
+hdfs dfs -put shakespeare.txt /user/cloudera
+
+#command to append word-list.txt to the shakespeare.txt file
+hdfs dfs -appendToFile word-list.txt /user/cloudera/shakespeare.txt
+
